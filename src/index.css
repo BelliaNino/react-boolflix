@@ -1,0 +1,33 @@
+.backg{
+    background-color: black;
+}
+.card-netflix {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.card-netflix img {
+  width: 100%;
+  display: block;
+  transition: transform 0.7s ease;
+}
+
+.card-netflix:hover img {
+  transform: scale(1.05);
+}
+
+.card-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(transparent, rgba(0,0,0,0.95));
+  padding: 20px 12px 12px;
+  transform: translateY(100%);
+  transition: transform 0.7s ease;
+}
+
+.card-netflix:hover .card-overlay {
+  transform: translateY(0);
+}

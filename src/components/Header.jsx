@@ -4,7 +4,7 @@ function Header({ onSearch }) {
   const [research, setResearch] = useState('')
 
   return (
-    <header className="bg-dark py-3 px-4 d-flex align-items-center justify-content-between">
+    <header className="bg-dark py-3 px-4 d-flex align-items-center justify-content-between sticky-top">
       <h1 className="text-danger fw-bold m-0">Boolflix</h1>
 
       <div className="d-flex align-items-center gap-3">
