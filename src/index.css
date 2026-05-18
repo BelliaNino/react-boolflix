@@ -1,3 +1,12 @@
+/*header*/
+.voice {
+transition: color 0.7s ease;
+}
+
+.voice:hover {
+  color: white !important; 
+}
+/*body*/
 .backg{
     background-color: black;
 }
@@ -30,4 +39,14 @@
 
 .card-netflix:hover .card-overlay {
   transform: translateY(0);
+}
+
+/*footer*/
+
+.tandp {
+transition: color 0.7s ease;
+}
+
+.tandp:hover {
+  color: white !important; 
 }

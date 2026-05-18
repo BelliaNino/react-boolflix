@@ -10,13 +10,13 @@ function Header({ onSearch }) {
       <div className="d-flex align-items-center gap-3">
         <ul className="navbar-nav d-flex flex-row align-items-center gap-3 m-0">
           <li className="nav-item">
-            <p className="text-danger fw-medium m-0 px-2">All</p>
+            <p className="voice text-danger fw-medium m-0 px-2">All</p>
           </li>
           <li className="nav-item">
-            <p className="text-danger fw-medium m-0 px-2">Movies</p>
+            <p className="voice text-danger fw-medium m-0 px-2">Movies</p>
           </li>
           <li className="nav-item">
-            <p className="text-danger fw-medium m-0 px-2">Series</p>
+            <p className="voice text-danger fw-medium m-0 px-2">Series</p>
           </li>
         </ul>
 
