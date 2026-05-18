@@ -15,7 +15,10 @@ function App() {
         console.log( series[0]);
         
         const filmsNormalizzati = films.map(f => ({ ...f, type: 'Film' }))
-        const serieNormalizzate = series.map(s => ({ ...s, type: 'Serie'}))
+        const serieNormalizzate = series.map(s => ({ ...s, 
+          title: s.name,
+          original_title: s.original_name,
+          type: 'Serie'}))
         setMovies([...filmsNormalizzati, ...serieNormalizzate])
       })
       .catch(err => console.error(err))
