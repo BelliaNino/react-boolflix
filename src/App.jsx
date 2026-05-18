@@ -9,8 +9,8 @@ function App() {
   const [movies, setMovies] = useState([])
 
 
-  function handleSearch(selectedMovie) {
-    searchMovies(selectedMovie)
+  function handleSearch(query) {
+    searchMovies(query)
       .then(results => setMovies(results))
       .catch(err => console.error(err))
   }
