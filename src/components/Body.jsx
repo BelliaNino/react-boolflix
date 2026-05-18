@@ -9,8 +9,8 @@ function Body({ movies }) {
             <div className="card bg-dark text-white">
               <div className="card-body">
                 <h6>{movie.title}</h6>
-                <p className="small text-muted m-0">{movie.original_language}</p>
-                <p className="small m-0">⭐ {movie.vote_average}</p>
+                <p className="small m-0">{movie.original_title}</p>
+                <p className="small m-0">⭐ {movie.vote_average} {movie.type}</p>
               </div>
             </div>
           </div>
