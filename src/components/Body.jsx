@@ -1,4 +1,5 @@
 import React from 'react'
+import {flag} from '../utils/flags'
 
 function Body({ movies }) {
   return (
@@ -9,7 +10,7 @@ function Body({ movies }) {
             <div className="card bg-dark text-white">
               <div className="card-body">
                 <h6>{movie.title}</h6>
-                <p className="small m-0">{movie.original_title}</p>
+                <p className="small m-0">{flag[movie.original_language] || movie.original_language}</p>
                 <p className="small m-0">⭐ {movie.vote_average} {movie.type}</p>
               </div>
             </div>
