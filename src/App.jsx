@@ -7,6 +7,7 @@ import { searchMovies, searchSeries } from './utils/fetch'
 
 function App() {
   const [movies, setMovies] = useState([])
+  const [filtro, setFiltro] = useState('All')
 
 
   function handleSearch(query) {
@@ -24,12 +25,21 @@ function App() {
       .catch(err => console.error(err))
   }
 
+  const MoviesFilter = movies.filter(movie => {
+    if(filtro === 'All') {
+      return true 
+    } else if (filtro === 'film') {
+      return movie.type === 'Film' 
+    } else if (filtro === 'series') {
+      return movie.type === 'Serie'
+    }
+  })
 
 
   return (
     <>
-      <Header onSearch={handleSearch} />
-      <Body movies={movies} />
+      <Header onSearch={handleSearch} setFiltro={setFiltro} />
+      <Body movies={MoviesFilter} />
       <Footer />
     </>
   )

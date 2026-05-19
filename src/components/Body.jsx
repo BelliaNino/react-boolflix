@@ -24,7 +24,7 @@ function Body({ movies }) {
                 <div className="card-overlay text-white">
                   <h6 className="m-0 mb-1">{movie.title}</h6>
                   <p className="m-0 small">
-                    //se la sigla non corrisponde a nessuna costante allora lascio che appaia la sigla della nazione
+                    {/*se la sigla non corrisponde a nessuna costante allora lascio che appaia la sigla lingua*/}
                     {flag[movie.original_language] || movie.original_language}
                   </p>
                   <p className="m-0 text-warning small">
